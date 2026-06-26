@@ -574,3 +574,143 @@ h2 {
     min-height: 260px;
   }
 }
+/* Real content pass */
+
+.specialist-info .secondary-button {
+  margin-top: 10px;
+}
+
+.specialist-detail-header {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.specialist-detail-photo {
+  border: 1px solid #d8dce3;
+  background: #f7f8fa;
+  overflow: hidden;
+}
+
+.specialist-detail-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.specialist-detail blockquote {
+  margin: 16px 0;
+  padding: 14px 18px;
+  border-left: 4px solid #b08d57;
+  background: #f7f8fa;
+  color: #2f3542;
+}
+
+.detail-section {
+  margin-top: 34px;
+}
+
+.detail-section ul {
+  padding-left: 22px;
+}
+
+.detail-section li {
+  margin-bottom: 7px;
+}
+
+.client-org-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.client-org-card {
+  border: 1px solid #d8dce3;
+  background: #ffffff;
+  padding: 16px;
+}
+
+.client-org-card h3 {
+  margin: 0 0 8px;
+  color: #1d3557;
+  font-size: 18px;
+}
+
+.client-org-card p {
+  margin: 0;
+  color: #4a5260;
+  font-size: 14px;
+}
+
+.client-cases-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.client-cases-group {
+  border: 1px solid #d8dce3;
+  background: #ffffff;
+  padding: 0;
+}
+
+.client-cases-group summary {
+  cursor: pointer;
+  padding: 16px 18px;
+  color: #1d3557;
+  font-weight: bold;
+}
+
+.client-cases-group summary span {
+  color: #b08d57;
+  margin-left: 6px;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0 18px 18px;
+}
+
+.case-card {
+  background: #f7f8fa;
+  border: 1px solid #d8dce3;
+  border-left: 4px solid #b08d57;
+  padding: 14px;
+}
+
+.case-card h3 {
+  margin: 0 0 8px;
+  color: #1d3557;
+  font-size: 17px;
+}
+
+.case-card p {
+  margin: 5px 0;
+}
+
+@media (max-width: 1000px) {
+  .client-org-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .specialist-detail-header {
+    grid-template-columns: 1fr;
+  }
+
+  .specialist-detail-photo {
+    max-width: 260px;
+  }
+
+  .client-org-grid {
+    grid-template-columns: 1fr;
+  }
+}
