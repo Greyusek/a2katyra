@@ -14,12 +14,18 @@ async function includeHTML() {
 }
 
 function getBasePath() {
-  const path = window.location.pathname;
+  const hostname = window.location.hostname;
+  const pathParts = window.location.pathname.split("/").filter(Boolean);
 
-  if (path.includes("/a2katyra/")) {
-    return "/a2katyra/";
+  // GitHub Pages project site:
+  // https://username.github.io/repository-name/
+  if (hostname.endsWith("github.io") && pathParts.length > 0) {
+    return "/" + pathParts[0] + "/";
   }
 
+  // Local server or ordinary hosting from domain root:
+  // http://localhost:8000/
+  // https://example.ru/
   return "/";
 }
 
