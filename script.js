@@ -16,8 +16,8 @@ async function includeHTML() {
 function getBasePath() {
   const path = window.location.pathname;
 
-  if (path.includes("/a2katyra-new/")) {
-    return "/a2katyra-new/";
+  if (path.includes("/a2katyra/")) {
+    return "/a2katyra/";
   }
 
   return "/";
