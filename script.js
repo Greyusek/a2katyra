@@ -9,7 +9,27 @@ async function includeHTML() {
   }
 
   initMenu();
+  initLinks();
   setActiveMenuItem();
+}
+
+function getBasePath() {
+  const path = window.location.pathname;
+
+  if (path.includes("/a2katyra-new/")) {
+    return "/a2katyra-new/";
+  }
+
+  return "/";
+}
+
+function initLinks() {
+  const basePath = getBasePath();
+  const links = document.querySelectorAll("[data-page]");
+
+  links.forEach((link) => {
+    link.href = basePath + link.dataset.page;
+  });
 }
 
 function initMenu() {
@@ -28,7 +48,7 @@ function setActiveMenuItem() {
   const links = document.querySelectorAll(".side-nav a");
 
   links.forEach((link) => {
-    if (link.pathname === currentPath) {
+    if (link.href && new URL(link.href).pathname === currentPath) {
       link.classList.add("active");
     }
   });
