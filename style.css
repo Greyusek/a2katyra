@@ -714,3 +714,121 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+/* Detailed services and map */
+
+.services-grid-large {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.service-link-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-link-card .service-label {
+  color: #b08d57;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.service-link-card a {
+  margin-top: auto;
+  color: #1d3557;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.service-link-card a:hover {
+  text-decoration: underline;
+}
+
+.service-detail-page ul {
+  padding-left: 22px;
+}
+
+.service-detail-page li {
+  margin-bottom: 8px;
+}
+
+.service-detail-content h2 {
+  margin-top: 28px;
+}
+
+.program-box {
+  margin-top: 24px;
+  padding: 18px;
+  background: #f7f8fa;
+  border-left: 4px solid #b08d57;
+}
+
+.program-line {
+  padding: 10px 14px;
+  border: 1px solid #d8dce3;
+  background: #f7f8fa;
+}
+
+.service-back-link {
+  margin-top: 28px;
+}
+
+.map-box {
+  margin-top: 30px;
+}
+
+.map-frame {
+  border: 1px solid #d8dce3;
+  overflow: hidden;
+  background: #f7f8fa;
+}
+
+.map-frame iframe {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .services-grid-large {
+    grid-template-columns: 1fr;
+  }
+
+  .map-frame iframe {
+    height: 320px;
+  }
+}
+/* About page update */
+
+.about-service-list {
+  display: grid;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.about-service-list article {
+  border: 1px solid #d8dce3;
+  background: #ffffff;
+  border-left: 4px solid #b08d57;
+  padding: 18px;
+}
+
+.about-service-list h3 {
+  margin-top: 0;
+  color: #1d3557;
+}
+
+.program-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.program-list span {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #f7f8fa;
+  border: 1px solid #d8dce3;
+  color: #1d3557;
+  font-weight: bold;
+}
