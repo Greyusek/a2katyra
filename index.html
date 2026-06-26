@@ -7,91 +7,28 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="top-header">
-    <div>
-      <div class="site-title">Адвокаты «Катырёв и партнёры»</div>
-      <div class="site-subtitle">Юридическая помощь, консультации, защита интересов</div>
-    </div>
-
-    <button class="menu-button" id="menuButton">☰ Меню</button>
-  </header>
+  <div data-include="components/header.html"></div>
 
   <div class="layout">
-    <aside class="sidebar" id="sidebar">
-      <nav>
-        <a href="#home">Главная</a>
-        <a href="#about">О нас</a>
-        <a href="#services">Услуги</a>
-        <a href="#specialists">Специалисты</a>
-        <a href="#clients">Клиенты</a>
-        <a href="#reviews">Отзывы</a>
-        <a href="#publications">Публикации</a>
-        <a href="#faq">Вопрос-ответ</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-    </aside>
+    <div data-include="components/sidebar.html"></div>
 
     <main class="content">
-      <section id="home" class="card">
-        <h1>Юридическая помощь</h1>
+      <section class="page-card">
+        <h1>Адвокатское бюро «Катырёв и партнёры»</h1>
         <p>
-          Здесь будет обновлённая версия сайта с сохранением основной информации
-          со старого ресурса. Структура сделана спокойной, деловой и удобной для чтения.
+          Юридическая помощь, консультации, представительство в суде,
+          защита прав и законных интересов доверителей.
         </p>
-      </section>
 
-      <section id="about" class="card">
-        <h2>О нас</h2>
-        <p>Раздел для информации об адвокатском образовании, опыте и принципах работы.</p>
-      </section>
-
-      <section id="services" class="card">
-        <h2>Услуги</h2>
-        <div class="grid">
-          <div class="service-item">Гражданские дела</div>
-          <div class="service-item">Уголовные дела</div>
-          <div class="service-item">Семейные споры</div>
-          <div class="service-item">Наследственные дела</div>
-          <div class="service-item">Жилищные вопросы</div>
-          <div class="service-item">Арбитражные споры</div>
+        <div class="notice">
+          Сайт находится в разработке. Информация будет перенесена со старого сайта
+          и оформлена в новом современном виде.
         </div>
-      </section>
-
-      <section id="specialists" class="card">
-        <h2>Специалисты</h2>
-        <p>Здесь будут карточки адвокатов и юристов с фотографиями и описанием.</p>
-      </section>
-
-      <section id="clients" class="card">
-        <h2>Клиенты</h2>
-        <p>Раздел для информации о клиентах и направлениях работы.</p>
-      </section>
-
-      <section id="reviews" class="card">
-        <h2>Отзывы</h2>
-        <p>Отзывы со старого сайта будут аккуратно перенесены в этот раздел.</p>
-      </section>
-
-      <section id="publications" class="card">
-        <h2>Публикации</h2>
-        <p>Раздел для статей, материалов и правовых комментариев.</p>
-      </section>
-
-      <section id="faq" class="card">
-        <h2>Вопрос-ответ</h2>
-        <p>Частые вопросы и ответы можно оформить отдельными раскрывающимися блоками.</p>
-      </section>
-
-      <section id="contacts" class="card">
-        <h2>Контакты</h2>
-        <p>Телефон, адрес, схема проезда, часы работы и способы связи.</p>
       </section>
     </main>
   </div>
 
-  <footer class="footer">
-    © Адвокаты «Катырёв и партнёры»
-  </footer>
+  <div data-include="components/footer.html"></div>
 
   <script src="script.js"></script>
 </body>
